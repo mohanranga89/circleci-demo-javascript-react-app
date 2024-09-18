@@ -13,6 +13,7 @@ jobs:
           pkg-manager: yarn
       - run:
           command: yarn install
+          name: install yarn dependencies
       - run:
           command: yarn test
           name: Run tests
