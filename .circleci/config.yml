@@ -1,18 +1,17 @@
 version:2.1
 
-workflows:
-  - name: test-deploy
-      jobs:
-        - test
 jobs:
   test:
     docker: 
-      - image: cimg/node:22.8.0
+      - image: centos:centos7
     steps:
       - checkout
       - run: 
           name: Run Tests
           command: npm --version
-
+workflows:
+  test-deploy
+      jobs:
+        - test
       
       
