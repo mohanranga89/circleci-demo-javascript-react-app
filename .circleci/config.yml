@@ -3,12 +3,13 @@ version:2.1
 jobs:
     test:
       docker: 
-        - image: centos:centos7
+        - image: cimg/base:2024.09
       steps:
         - checkout
         - run: 
             name: Run Tests
-            command: npm --version
+            command: echo "sleeping for 30 secs"
+            command: sleep 30
  workflows:
           test-deploy
             jobs:
