@@ -1,6 +1,6 @@
 version:2.1
 workflows:
-   test-deploy:
+   - name: test-deploy
      jobs:
        - test
 jobs:
