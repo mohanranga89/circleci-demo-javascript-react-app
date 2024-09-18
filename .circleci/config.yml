@@ -1,8 +1,9 @@
 version:2.1
+
 workflows:
-   - name: test-deploy
-     jobs:
-       - test
+  - name: test-deploy
+      jobs:
+        - test
 jobs:
   test:
     docker: 
