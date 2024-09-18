@@ -10,11 +10,6 @@ jobs:
     steps:
       - checkout
       - run: node --version
- workflows:
-   test-deploy:
-     jobs:
-       - test
-    
 
       
       
