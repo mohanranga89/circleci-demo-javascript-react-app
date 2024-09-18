@@ -1,17 +1,17 @@
 version:2.1
 
 jobs:
-  test:
-    docker: 
-      - image: centos:centos7
-    steps:
-      - checkout
-      - run: 
-          name: Run Tests
-          command: npm --version
+    test:
+      docker: 
+        - image: centos:centos7
+      steps:
+        - checkout
+        - run: 
+            name: Run Tests
+            command: npm --version
  workflows:
-   test-deploy
-     jobs:
-       - test
+          test-deploy
+            jobs:
+              - test
       
       
