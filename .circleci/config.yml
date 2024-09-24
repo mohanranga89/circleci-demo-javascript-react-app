@@ -6,7 +6,7 @@ orbs:
 jobs:
   runner:
     machine: true
-    resource_class: <blast>/<circleci>
+    resource_class: blast/circleci
     steps:
       - run: echo "Hi I'm on Runners!"
   build_and_test:
