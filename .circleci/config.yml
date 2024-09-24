@@ -8,7 +8,7 @@ jobs:
     machine: true
     resource_class: blast/circleci
     steps:
-      - run: echo "Hi I'm on Runners!"
+      - run: echo "Hi I'm on Runner!"
   build_and_test:
     docker:
       - image: cimg/node:17.2.0
